@@ -39,7 +39,7 @@ Here's how Picocrypt compares to other popular encryption tools.
 
 |                | Picocrypt      | VeraCrypt      | 7-Zip GUI      | BitLocker      | Cryptomator    |
 | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
-| Free           |✅ Yes         |✅ Yes          |✅ Yes         |✅ Bundled      |✅ Yes         |
+| Free           |✅ Да         	|✅ Да          	|✅ Да         	|✅ Събрано     |✅ Да         |
 | Open Source    |✅ GPLv3       |✅ Multi        |✅ LGPL        |❌ No           |✅ GPLv3       |
 | Cross-Platform |✅ Yes         |✅ Yes          |❌ No          |❌ No           |✅ Yes         |
 | Size           |✅ 3 MiB       |❌ 20 MiB       |✅ 2 MiB       |✅ N/A          |❌ 50 MiB      |
