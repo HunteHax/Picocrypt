@@ -1,6 +1,8 @@
 <p>English | <a href="/translations/french.md">Français</a> | <a href="/translations/spanish.md">Español</a> | <a href="/translations/german.md">Deutsch</a> | <a href="/translations/portuguese.md">Português</a> | <a href="/translations/turkish.md">Türkçe</a> | <a href="/translations/chinese.md">中文</a> | <a href="/translations/russian.md">Русский</a> | <a href="/translations/hungarian.md">Magyar</a> | <a href="/translations/italian.md">Italiano</a> | <a href="/translations/persian.md">پارسی</a> | <a href="/translations/polish.md">Polski</a> | <a href="/translations/bulgarian.md">Bulgarian</a></p>
 <p align="center"><img align="center" src="/images/logo.svg" width="512" alt="Picocrypt"></p> 
 
+Picocrypt е доста малък (ето защо <i>Pico</i>), доста лесен, и в същото време много сигурен инструмент, който може да се използва при защита на вашите файлове. Създаден е да бъде <i>go-to</i> инстумент за криптиране, с фокус насочен към сигурност, лесен за използване и надежден. Picocrypt използва сигурният XChaCha20 шифър и Argon2id ключ, за да предостави достатъчно високо ниво на сигурност, което да защитава дори от 3 буквени агенции като АНС.
+
 Picocrypt is a very small (hence <i>Pico</i>), very simple, yet very secure encryption tool that you can use to protect your files. It's designed to be the <i>go-to</i> tool for encryption, with a focus on security, simplicity, and reliability. Picocrypt uses the secure XChaCha20 cipher and the Argon2id key derivation function to provide a high level of security, even from three-letter agencies like the NSA. It's designed for maximal security, making absolutely no compromises security-wise, and is built with Go's standard x/crypto modules. <strong>Your privacy and security are under attack. Take it back with confidence by protecting your files with Picocrypt.</strong>
 
 <p align="center"><img align="center" src="/images/screenshot.png" width="318" alt="Picocrypt"></p>
@@ -42,9 +44,9 @@ Here's how Picocrypt compares to other popular encryption tools.
 | Безплатно      |✅ Да         	|✅ Да          	|✅ Да          |✅ Пакет        |✅ Да          |
 | Отворен Код    |✅ GPLv3       |✅ Multi        |✅ LGPL        |❌ Не           |✅ GPLv3       |
 | Cross-Platform |✅ Да         	|✅ Да          	|❌ Не          |❌ Не           |✅ Да          |
-| Size           |✅ 3 MБ       	|❌ 20 МБ       	|✅ 2 МБ        |✅ N/A          |❌ 50 MБ       |
+| Големина       |✅ 3 MБ       	|❌ 20 МБ       	|✅ 2 МБ        |✅ N/A          |❌ 50 MБ       |
 | Portable       |✅ Да         	|✅ Да          	|❌ Не          |✅ Да           |❌ Не          |
-| Permissions    |✅ Не е нужно  |❌ Администатор |❌ Администатор|❌ Администатор |❌ Администатор|
+| Позволения     |✅ Не е нужно  |❌ Администратор |❌ Администратор|❌ Администратор |❌ Администратор|
 | Ease-Of-Use    |✅ Лесно       |❌ Трудно       |✅ Лесно       |✅ Лесно        |🟧 Средно      |
 | Шифър          |✅ XChaCha20   |✅ AES-256      |✅ AES-256     |🟧 AES-128      |✅ AES-256     |
 | Key Derivation |✅ Argon2      |🟧 PBKDF2       |❌ SHA-256     |❓ Няма инфомрация |✅ Скрипт      |
