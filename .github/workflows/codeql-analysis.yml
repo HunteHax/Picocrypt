@@ -5,6 +5,12 @@ on:
       - "src/*.go"
       - "src/go.mod"
       - "src/go.sum"
+      - "cli/picocrypt/*.go"
+      - "cli/picocrypt/go.mod"
+      - "cli/picocrypt/go.sum"
+      - "web/*.go"
+      - "web/go.mod"
+      - "web/go.sum"
   pull_request:
     branches: [ main ]
 jobs:
@@ -21,7 +27,7 @@ jobs:
         language: ['go']
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:

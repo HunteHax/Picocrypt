@@ -1,27 +1,39 @@
-<p>English | <a href="/translations/french.md">Français</a> | <a href="/translations/spanish.md">Español</a> | <a href="/translations/german.md">Deutsch</a> | <a href="/translations/portuguese.md">Português</a> | <a href="/translations/turkish.md">Türkçe</a> | <a href="/translations/chinese.md">中文</a> | <a href="/translations/russian.md">Русский</a> | <a href="/translations/hungarian.md">Magyar</a> | <a href="/translations/italian.md">Italiano</a> | <a href="/translations/persian.md">پارسی</a> | <a href="/translations/polish.md">Polski</a></p>
 <p align="center"><img align="center" src="/images/logo.svg" width="512" alt="Picocrypt"></p> 
 
-Picocrypt is a very small (hence <i>Pico</i>), very simple, yet very secure encryption tool that you can use to protect your files. It's designed to be the <i>go-to</i> tool for encryption, with a focus on security, simplicity, and reliability. Picocrypt uses the secure XChaCha20 cipher and the Argon2id key derivation function to provide a high level of security, even from three-letter agencies like the NSA. It's designed for maximal security, making absolutely no compromises security-wise, and is built with Go's standard x/crypto modules. <strong>Your privacy and security are under attack. Take it back with confidence by protecting your files with Picocrypt.</strong>
+Picocrypt is a very small (hence <i>Pico</i>), very simple, yet very secure encryption tool that you can use to protect your files. It's designed to be the <i>go-to</i> tool for encryption, with a focus on security, simplicity, and reliability. Picocrypt uses the secure XChaCha20 cipher and the Argon2id key derivation function to provide a high level of security, even from three-letter agencies like the NSA. <strong>Your privacy and security is under attack. Take it back with confidence by protecting your files with Picocrypt.</strong>
 
+<br>
 <p align="center"><img align="center" src="/images/screenshot.png" width="318" alt="Picocrypt"></p>
+
+**Project status: temporarily on hold**. I've decided to take some time off of Picocrypt to focus on my academics and personal goals. Thus, don't expect any new developments for the next little while, although none should be needed as Picocrypt is already very stable and usable. It's been a pleasure developing this app so far and I hope to continue in the future when I have more time and energy. Until then, farewell!
 
 # Funding
 **Please donate to Picocrypt on <a href="https://opencollective.com/picocrypt">Open Collective</a> (crypto is accepted) to raise money for a security audit from Cure53. Because this is a project that I spend many hours on and make no money from, I cannot pay for an audit myself. <i>Picocrypt needs support from its community.**</i>
 
 # Downloads
-**Important**: There are multiple entities under the name "Picocrypt". For example, there's an old encryption tool called PicoCrypt that uses a broken cipher. There's also an ERC-funded research project called PICOCRYPT. There are even domains related to Picocrypt that I've never registered. Please don't confuse any of these unrelated projects with Picocrypt (this project). Make sure to only download Picocrypt from this repository to ensure that you get the authentic and backdoor-free Picocrypt. When sharing Picocrypt with others, be sure to link to this repository to prevent any confusion.
+**Important**: There are multiple entities under the name "Picocrypt". For example, there's an old encryption tool called PicoCrypt that uses a broken cipher. There's also an ERC-funded research project called PICOCRYPT. There are even domains related to Picocrypt that I've never registered like picocrypt.com and picocrypt.org. Please don't confuse any of these unrelated (and potentially malicious) projects/domains with Picocrypt (this project). **Make sure to only download Picocrypt from this repository** to ensure that you get the authentic and backdoor-free Picocrypt. When sharing Picocrypt with others, be sure to link to this repository to prevent any confusion.
+
+**Beware of picocrypt.org, which claims to be the official website for this project! Remember, there is no official website for Picocrypt.** Even if this self-proclaimed website is taken down, I will not remove this message; let it be a real-world warning to stay vigilant.
 
 ## Windows
-Picocrypt for Windows is as simple as it gets. To download the latest, standalone, and portable executable for Windows, click <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.31/Picocrypt.exe">here</a>. If Microsoft Defender or your antivirus flags Picocrypt as a virus, please do your part and submit it as a false positive for the betterment of everyone.
+Picocrypt for Windows is as simple as it gets. To download the latest, standalone, and portable executable for Windows, click <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Picocrypt.exe">here</a>. If Microsoft Defender or your antivirus flags Picocrypt as a virus, please do your part and submit it as a false positive for the betterment of everyone.
+
+If you use Picocrypt frequently, you can also download the installable version from <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Installer.exe">here</a>, which will install Picocrypt onto your system and add it to your start menu for easy access. The installer also includes extra compatibility helpers, so if the portable executable doesn't work, this likely will.
 
 ## macOS
-Picocrypt for macOS is very simple as well. Download Picocrypt <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.31/Picocrypt.app.zip">here</a>, extract the zip file, and run Picocrypt which is inside. If you can't open Picocrypt because it's not from a verified developer, control-click on Picocrypt and hit Open to bypass the warning. Keep in mind that Picocrypt runs through Rosetta 2 and requires OpenGL, and may not work in the future should Apple remove either.
+Picocrypt for macOS is very simple as well. Download Picocrypt <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Picocrypt.app.zip">here</a>, extract the zip file, and run Picocrypt which is inside. If you can't open Picocrypt because it's not from a verified developer, control-click on Picocrypt and hit Open to bypass the warning. Note that the standard release targets x86-64 systems so you may need Rosetta 2, but you can compile from source on Apple silicon to run Picocrypt natively. Also note that Picocrypt requires OpenGL, and may not work in the future if Apple removes it.
 
 ## Linux
-To use Picocrypt on Linux, you can download the AppImage <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.31/Picocrypt.AppImage">here</a>. While this AppImage should work on most systems, Linux is a mess when it comes to cross-distro and cross-release compatibility, so if the AppImage doesn't work, you can run Picocrypt through Wine or from source using the instructions in the `src/` directory.
+To use Picocrypt on Linux, you can download the AppImage <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Picocrypt.AppImage">here</a>. While this AppImage should work on most systems, Linux is a mess when it comes to cross-distro and cross-release compatibility, so if the AppImage doesn't work, you can try the <a href="https://snapcraft.io/picocrypt">Snap</a>, run Picocrypt through Wine, or compile from source using the instructions in the `src/` directory.
+
+## Web
+A web interface for Picocrypt is available <a href="https://picocrypt.pages.dev/">here</a>, allowing you to use a lite version of Picocrypt on any device. Keep in mind that its functionality is very limited and you won't be able to use any advanced features or encrypt large files. It is also quite slow compared to the native app.
+
+## CLI
+A command-line interface is available for Picocrypt <a href="/cli">here</a>. Keep in mind that the functionality is extremely limited and is not meant to replace the standard GUI app. Rather, it's best suited for environments where the GUI won't run or you need the ability to automate encryption workflows.
 
 ## Paranoid Pack
-The Paranoid Pack is a compressed archive that contains executables for Windows, macOS, and Linux, including the source code and dependencies. As long as you have it stored in a place you can access, you'll be able to open it and use Picocrypt on any desktop operating system in case this repository mysteriously vanishes or the entire Internet burns down. Think of it as a seed vault for Picocrypt; as long as one person has the Paranoid Pack within reach, they can share it with the rest of the world and keep Picocrypt functional in case of catastrophic events. The best way to ensure Picocrypt is accessible many decades from now is to keep a Paranoid Pack in a safe place. Get your copy <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.31/Paranoid.zip">here</a>.
+The Paranoid Pack is a compressed archive that contains executables for Windows, macOS, and Linux, including the source code and dependencies. As long as you have it stored in a place you can access, you'll be able to open it and use Picocrypt on any desktop operating system in case this repository mysteriously vanishes or the entire Internet burns down. Think of it as a seed vault for Picocrypt; as long as one person has the Paranoid Pack within reach, they can share it with the rest of the world and keep Picocrypt functional in case of catastrophic events. The best way to ensure Picocrypt is accessible many decades from now is to keep a Paranoid Pack in a safe place. Get your copy <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Paranoid.zip">here</a>.
 
 # Why Picocrypt?
 Why should you use Picocrypt instead of VeraCrypt, 7-Zip, BitLocker, or Cryptomator? Here are a few reasons why you should choose Picocrypt:
@@ -49,10 +61,11 @@ Here's how Picocrypt compares to other popular encryption tools.
 | Cipher         |✅ XChaCha20   |✅ AES-256      |✅ AES-256     |🟧 AES-128      |✅ AES-256     |
 | Key Derivation |✅ Argon2      |🟧 PBKDF2       |❌ SHA-256     |❓ Unknown      |✅ Scrypt      |
 | Data Integrity |✅ Always      |❌ No           |❌ No          |❓ Unknown      |✅ Always      |
+| Deniability    |✅ Supported   |✅ Supported    |❌ No          |❌ No           |❌ No          |
 | Reed-Solomon   |✅ Yes         |❌ No           |❌ No          |❌ No           |❌ No          |
 | Compression    |✅ Yes         |❌ No           |✅ Yes         |✅ Yes          |❌ No          |
 | Telemetry      |✅ None        |✅ None         |✅ None        |❓ Unknown      |✅ None        |
-| Audited        |🟧 Planned     |✅ Yes          |❌ No          |❓ Unknown      |✅ Yes         |
+| Audited        |❌ [Donate](https://opencollective.com/picocrypt)     |✅ Yes          |❌ No          |❓ Unknown      |✅ Yes         |
 
 Keep in mind that while Picocrypt does most things better than other tools, it's not a one-size-fits-all and doesn't try to be. There are use cases such as full-disk encryption where VeraCrypt and BitLocker would be a better choice. So while Picocrypt is a great choice for the majority of people, you should still do your own research and use what's best for you.
 
@@ -69,6 +82,8 @@ While being simple, Picocrypt also strives to be powerful in the hands of knowle
 	<li><strong>Force decrypt</strong>: Picocrypt automatically checks for file integrity upon decryption. If the file has been modified or is corrupted, Picocrypt will automatically delete the output for the user's safety. If you would like to override these safeguards, check this option. Also, if this option is checked and the Reed-Solomon feature was used on the encrypted volume, Picocrypt will attempt to recover as much of the file as possible during decryption.</li>
 	<li><strong>Split into chunks</strong>: Don't feel like dealing with gargantuan files? No worries! With Picocrypt, you can choose to split your output file into custom-sized chunks, so large files can become more manageable and easier to upload to cloud providers. Simply choose a unit (KiB, MiB, GiB, or TiB) and enter your desired chunk size for that unit. To decrypt the chunks, simply drag one of them into Picocrypt and the chunks will be automatically recombined during decryption.</li>
 	<li><strong>Compress files</strong>: By default, Picocrypt uses a zip file with no compression to quickly merge files together when encrypting multiple files. If you would like to compress these files, however, simply check this box and the standard Deflate compression algorithm will be applied during encryption.</li>
+	<li><strong>Deniability</strong>: Picocrypt volumes typically follow an easily recognizable header format. However, if you want to hide the fact that you are encrypting your files, enabling this option will provide you with plausible deniability. The output volume will indistinguishable from a stream of random bytes, and no one can prove it is a volume without the correct password. This can be useful in an authoritarian country where the only way to transport your files safely is if they don't "exist" in the first place. Keep in mind that this mode slows down encryption and decryption speeds, requires you to manually rename the volume afterward, renders comments useless, and also voids the extra security precautions of the paranoid mode, so you should only use it if absolutely necessary.</li>
+	<li><strong>Recursively</strong>: If you want to encrypt and/or decrypt a large set of files individually, this option will tell Picocrypt to go through every recursive file that you drop in and encrypt/decrypt it separately. This is useful, for example, if you are encrypting thousands of large documents and want to be able to decrypt any one of them in particular without having to download and decrypt the entire set of documents. Keep in mind that this is a very complex feature that should only be used if you know what you are doing.</li>
 </ul>
 
 # Security
@@ -112,13 +127,18 @@ People seem to have the notion that software must be constantly updated to stay 
 
 No, it doesn't shred any files and just deletes them as your file manager would. On modern storage mediums like SSDs, there is no such thing as shredding a file since wear leveling makes it impossible to overwrite a particular sector. Thus, to prevent giving users a false sense of security, Picocrypt doesn't include any shredding features at all.
 
+**Is Picocrypt quantum-secure?**
+
+Yes, Picocrypt is secure against quantum computers. All of the cryptography used in Picocrypt works off of a private key, and private-key cryptography is considered to be resistant against all current and future developments, including quantum computers.
+
 # Acknowledgements
-A thank you from the bottom of my heart to the people on Open Collective who have made a significant contribution:
+A thank you from the bottom of my heart to the significant contributors on Open Collective:
 <ul>
 	<li>donor39 (backer)</li>
 	<li>Pokabu (backer)</li>
 	<li>akp (backer)</li>
 	<li>Marvin (backer)</li>
+	<li>Kenichi Nakasaka (backer)</li>
 	<li>Guest ($842)</li>
 	<li>YellowNight ($818)</li>
 	<li>evelian ($50)</li>
@@ -134,31 +154,22 @@ A thank you from the bottom of my heart to the people on Open Collective who hav
 	<li>Phil P. ($10)</li>
 	<li>Raymond ($10)</li>
 	<li>Cohen ($10)</li>
+	<li>EuA ($10)</li>
+	<li>geevade ($10)</li>
+	<li>Guest ($10)</li>
+	<li>Hilebrinest ($10)</li>
+	<li>gabu.gu ($10)</li>
+	<li>Boat ($10)</li>
 </ul>
-<!-- Last updated December 30, 2022 -->
+<!-- Last updated June 14, 2023 -->
 
-Also, a huge thanks to the following list of five people, who were the first to donate and support Picocrypt:
+Also, a huge thanks to the following people who were the first to donate and support Picocrypt:
 <ul>
 	<li>W.Graham</li>
 	<li>N. Chin</li>
 	<li>Manjot</li>
 	<li>Phil P.</li>
 	<li>E. Zahard</li>
-</ul>
-
-As well, a great thanks to these people, who have helped translate Picocrypt's README and make it more accessible to the world:
-<ul>
-	<li>Turkish: @umitseyhan75</li>
-	<li>German: @digitalblossom and @Pokabu26</li>
-	<li>Portuguese: @zeeaall and @Rayserzor</li>
-	<li>Spanish: u/francirc and @victorhck</li>
-	<li>Russian: yn, Voron, and @ViktorOn</li>
-	<li>Hungarian: @Etim-Orb</li>
-	<li>Italian: @Minibus93</li>
-	<li>French: Michel</li>
-	<li>Persian: @MasterKia</li>
-	<li>Polish: @ungespurv</li>
-	<li>Chinese: @qaqland</li>
 </ul>
 
 Finally, thanks to these people/organizations for helping me out when needed:
@@ -169,7 +180,7 @@ Finally, thanks to these people/organizations for helping me out when needed:
 	<li>u/Tall_Escape for helping me test Picocrypt</li>
 	<li>u/NSABackdoors for doing plenty of testing</li>
 	<li>@samuel-lucas6 for feedback, suggestions, and support</li>
-	<li><a href="https://privacytools.io">PrivacyTools</a> for listing Picocrypt</li>
+	<li>@AsuxAX and @Minibus93 for testing new features</li>
+	<li>@mdanish-kh and @stephengillie for WinGet package</li>
 	<li><a href="https://privacyguides.org">PrivacyGuides</a> for listing Picocrypt</li>
-	<li>...You?</li>
 </ul>
