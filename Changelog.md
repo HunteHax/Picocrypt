@@ -1,3 +1,16 @@
+# Future
+<ul>
+	<li>Migrate golang.org/x/crypto to standard library imports (https://github.com/golang/go/issues/65269)</li>
+</ul>
+
+# v1.34 (Released 04/29/2024)
+<ul>
+	<li>✓ New CLI with support for files, folders, globs, paranoid mode, and Reed-Solomon</li>
+	<li>✓ Migrate github.com/HACKERALERT/crypto back to golang.org/x/crypto</li>
+	<li>✓ Distribute raw Linux binary instead of AppImage for better portability</li>
+	<li>✓ Distribute macOS binaries for both Intel and Apple silicon</li>
+</ul>
+
 # v1.33 (Released 06/27/2023)
 <ul>
 	<li>✓ Add tooltip warning that comments are not encrypted (#164)</li>

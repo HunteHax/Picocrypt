@@ -1,14 +1,14 @@
+# ✨We've Moved!✨
+This repository has permanently moved to [github.com/Picocrypt](https://github.com/Picocrypt).
+
+# Picocrypt
+
 <p align="center"><img align="center" src="/images/logo.svg" width="512" alt="Picocrypt"></p> 
 
 Picocrypt is a very small (hence <i>Pico</i>), very simple, yet very secure encryption tool that you can use to protect your files. It's designed to be the <i>go-to</i> tool for encryption, with a focus on security, simplicity, and reliability. Picocrypt uses the secure XChaCha20 cipher and the Argon2id key derivation function to provide a high level of security, even from three-letter agencies like the NSA. <strong>Your privacy and security is under attack. Take it back with confidence by protecting your files with Picocrypt.</strong>
 
 <br>
 <p align="center"><img align="center" src="/images/screenshot.png" width="318" alt="Picocrypt"></p>
-
-**Project status: temporarily on hold**. I've decided to take some time off of Picocrypt to focus on my academics and personal goals. Thus, don't expect any new developments for the next little while, although none should be needed as Picocrypt is already very stable and usable. It's been a pleasure developing this app so far and I hope to continue in the future when I have more time and energy. Until then, farewell!
-
-# Funding
-**Please donate to Picocrypt on <a href="https://opencollective.com/picocrypt">Open Collective</a> (crypto is accepted) to raise money for a security audit from Cure53. Because this is a project that I spend many hours on and make no money from, I cannot pay for an audit myself. <i>Picocrypt needs support from its community.**</i>
 
 # Downloads
 **Important**: There are multiple entities under the name "Picocrypt". For example, there's an old encryption tool called PicoCrypt that uses a broken cipher. There's also an ERC-funded research project called PICOCRYPT. There are even domains related to Picocrypt that I've never registered like picocrypt.com and picocrypt.org. Please don't confuse any of these unrelated (and potentially malicious) projects/domains with Picocrypt (this project). **Make sure to only download Picocrypt from this repository** to ensure that you get the authentic and backdoor-free Picocrypt. When sharing Picocrypt with others, be sure to link to this repository to prevent any confusion.
@@ -21,16 +21,20 @@ Picocrypt for Windows is as simple as it gets. To download the latest, standalon
 If you use Picocrypt frequently, you can also download the installable version from <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Installer.exe">here</a>, which will install Picocrypt onto your system and add it to your start menu for easy access. The installer also includes extra compatibility helpers, so if the portable executable doesn't work, this likely will.
 
 ## macOS
-Picocrypt for macOS is very simple as well. Download Picocrypt <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Picocrypt.app.zip">here</a>, extract the zip file, and run Picocrypt which is inside. If you can't open Picocrypt because it's not from a verified developer, control-click on Picocrypt and hit Open to bypass the warning. Note that the standard release targets x86-64 systems so you may need Rosetta 2, but you can compile from source on Apple silicon to run Picocrypt natively. Also note that Picocrypt requires OpenGL, and may not work in the future if Apple removes it.
+Picocrypt for macOS is very simple as well. Download Picocrypt for Apple silicon <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.34/Picocrypt-arm64.dmg">here</a>, open the container, and drag Picocrypt to your Downloads or Applications. If you can't open Picocrypt because it's not from a verified developer, control-click on Picocrypt and hit Open to bypass the warning. If the app appears to be "damaged" and can't be opened, try manually trusting it from a terminal:
+```
+xattr -d com.apple.quarantine /Applications/Picocrypt.app
+```
+Note that Picocrypt requires OpenGL, and may not work in the future if Apple removes it.
 
 ## Linux
-To use Picocrypt on Linux, you can download the AppImage <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Picocrypt.AppImage">here</a>. While this AppImage should work on most systems, Linux is a mess when it comes to cross-distro and cross-release compatibility, so if the AppImage doesn't work, you can try the <a href="https://snapcraft.io/picocrypt">Snap</a>, run Picocrypt through Wine, or compile from source using the instructions in the `src/` directory.
+To use Picocrypt on Linux, you can download the raw binary <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.34/Picocrypt">here</a>. Alternatively, you can try the <a href="https://snapcraft.io/picocrypt">Snap</a>, run Picocrypt through Wine, or compile from source using the instructions in the `src/` directory.
+
+## CLI
+A command-line interface is available for Picocrypt <a href="/cli/v2/picocrypt">here</a>. It can encrypt and decrypt files, folders, and globs, and supports paranoid mode and Reed-Solomon encoding. You can use it on systems that don't have a GUI or can't run the GUI app, or to write automated shell scripts for backups, etc.
 
 ## Web
 A web interface for Picocrypt is available <a href="https://picocrypt.pages.dev/">here</a>, allowing you to use a lite version of Picocrypt on any device. Keep in mind that its functionality is very limited and you won't be able to use any advanced features or encrypt large files. It is also quite slow compared to the native app.
-
-## CLI
-A command-line interface is available for Picocrypt <a href="/cli">here</a>. Keep in mind that the functionality is extremely limited and is not meant to replace the standard GUI app. Rather, it's best suited for environments where the GUI won't run or you need the ability to automate encryption workflows.
 
 ## Paranoid Pack
 The Paranoid Pack is a compressed archive that contains executables for Windows, macOS, and Linux, including the source code and dependencies. As long as you have it stored in a place you can access, you'll be able to open it and use Picocrypt on any desktop operating system in case this repository mysteriously vanishes or the entire Internet burns down. Think of it as a seed vault for Picocrypt; as long as one person has the Paranoid Pack within reach, they can share it with the rest of the world and keep Picocrypt functional in case of catastrophic events. The best way to ensure Picocrypt is accessible many decades from now is to keep a Paranoid Pack in a safe place. Get your copy <a href="https://github.com/HACKERALERT/Picocrypt/releases/download/1.33/Paranoid.zip">here</a>.
@@ -65,7 +69,7 @@ Here's how Picocrypt compares to other popular encryption tools.
 | Reed-Solomon   |✅ Yes         |❌ No           |❌ No          |❌ No           |❌ No          |
 | Compression    |✅ Yes         |❌ No           |✅ Yes         |✅ Yes          |❌ No          |
 | Telemetry      |✅ None        |✅ None         |✅ None        |❓ Unknown      |✅ None        |
-| Audited        |❌ [Donate](https://opencollective.com/picocrypt)     |✅ Yes          |❌ No          |❓ Unknown      |✅ Yes         |
+| Audited        |✅ Yes         |✅ Yes          |❌ No          |❓ Unknown      |✅ Yes         |
 
 Keep in mind that while Picocrypt does most things better than other tools, it's not a one-size-fits-all and doesn't try to be. There are use cases such as full-disk encryption where VeraCrypt and BitLocker would be a better choice. So while Picocrypt is a great choice for the majority of people, you should still do your own research and use what's best for you.
 
@@ -139,6 +143,8 @@ A thank you from the bottom of my heart to the significant contributors on Open 
 	<li>akp (backer)</li>
 	<li>Marvin (backer)</li>
 	<li>Kenichi Nakasaka (backer)</li>
+	<li>EN (backer)</li>
+	<li>JC (backer)</li>
 	<li>Guest ($842)</li>
 	<li>YellowNight ($818)</li>
 	<li>evelian ($50)</li>
@@ -147,6 +153,8 @@ A thank you from the bottom of my heart to the significant contributors on Open 
 	<li>Guest ($27)</li>
 	<li>oli ($20)</li>
 	<li>Bright ($20)</li>
+	<li>Incognito ($20)</li>
+	<li>Guest ($20)</li>
 	<li>Markus ($15)</li>
 	<li>Tybbs ($10)</li>
 	<li>N. Chin ($10)</li>
@@ -160,8 +168,9 @@ A thank you from the bottom of my heart to the significant contributors on Open 
 	<li>Hilebrinest ($10)</li>
 	<li>gabu.gu ($10)</li>
 	<li>Boat ($10)</li>
+	<li>Guest ($10)</li>
 </ul>
-<!-- Last updated June 14, 2023 -->
+<!-- Last updated April 16, 2024 -->
 
 Also, a huge thanks to the following people who were the first to donate and support Picocrypt:
 <ul>
